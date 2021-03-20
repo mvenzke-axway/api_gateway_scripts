@@ -6,5 +6,5 @@ syntax.  Failure to do this will result in serious performance problems.
 
 Please refer to the following KBs for further information:
 
-https://support.axway.com/kb/178597/language/en
-https://support.axway.com/kb/178623/language/en
+* https://support.axway.com/kb/178597/language/en
+* https://support.axway.com/kb/178623/language/en
