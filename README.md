@@ -4,10 +4,12 @@ This is a collection of sample scripts for use with Axway API Gateway Scripting
 Language filters.
 
 For more information on Axway API Gateway, see:  
+
 https://docs.axway.com/bundle/axway-open-docs/page/docs/index.html
 
 I also strongly recommend this project to help avoid accidental global variables
 in your JavaScript filters:
+
 https://github.com/lfirwin/axway-js-filter-check
 
 Globals in these filters cause thread safety issues and can leak data across
