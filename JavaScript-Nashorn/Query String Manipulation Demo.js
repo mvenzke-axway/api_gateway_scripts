@@ -2,6 +2,21 @@
 var script_name = "Query String Manipulation Demo";
 var imp = new JavaImporter(com.vordel.trace, com.vordel.circuit, org.apache.commons.collections.MultiHashMap);
 
+// This sample shows how to manipulate API Gateway query strings in script.  That said, as always, you should
+// avoid using scripts where possible due to the need to re-validate scripts every upgrade.
+//
+// Note that for simple cases, there are multiple gateway filters that should be used in preference to a script.  
+// This script is for when you have to do a lot of complicated property manipulations.
+//
+// For example, Create REST Request is documented here:
+// https://docs.axway.com/bundle/axway-open-docs/page/docs/apim_policydev/apigw_polref/conversion_common/index.html#create-rest-request-filter
+//
+// There's also an Extract REST Request Attributes filter:
+// https://docs.axway.com/bundle/axway-open-docs/page/docs/apim_policydev/apigw_polref/attributes_manipulate/index.html#extract-rest-request-attributes-filter
+//
+// Finally, there are several other validation filters here that can validate your requests:
+// https://docs.axway.com/bundle/axway-open-docs/page/docs/apim_policydev/apigw_polref/content_common/index.html#query-string-validation-filter
+
 with (imp) {
     function invoke(msg) {
         try {
